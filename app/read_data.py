@@ -130,8 +130,10 @@ class Read_data():
         print(df)
         return df
 
+
 m = Read_data()
 m.pandas_df()
+
 
 class Postgre_DB(Read_data):
     def connect_to_db(self) -> None:
@@ -161,8 +163,10 @@ class Postgre_DB(Read_data):
         conn.close()
         pass
 
+
 p = Postgre_DB()
 p.connect_to_db()
+
 
 class Telegram_notifications(Read_data):
     """
@@ -180,8 +184,10 @@ class Telegram_notifications(Read_data):
                     messages=[
                         f"Time for delivery of order number:{i} has passed"])
 
+
 t = Telegram_notifications()
 t.check_dates()
+
 
 class Check_data_online(Postgre_DB, Telegram_notifications):
     """
@@ -232,7 +238,6 @@ class Check_data_online(Postgre_DB, Telegram_notifications):
                 else:
                     # change data
                     self.connect_to_db()
-                    self.check_dates()
                     pass
 
             # To handle exceptions
