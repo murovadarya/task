@@ -34,3 +34,11 @@ uvicorn app.main:app --reload
 
 телеграм канал:
 https://telegram.me/job_task_bot
+
+Если что-то пойдёт не так, то можно просто запустить файл
+"Read_data.py" в папке app
+Будет то же самое
+
+Командой:
+Python3 <file_path>
+
