@@ -19,9 +19,9 @@ SQL Shell:
 
 **ALTER ROLE myprojectuser SET default_transaction_isolation TO 'read committed';**
 
-**ALTER ROLE myprojectuser SET timezone TO 'UTC'; **
-**GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
-**
+ALTER ROLE myprojectuser SET timezone TO 'UTC'; 
+GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
+
 
 открыть проект, созать вертуальную среду
 
