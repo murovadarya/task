@@ -11,7 +11,7 @@ psql -U postgre
 
 SQL Shell:
 
-**CREATE DATABASE myproject;
+**CREATE DATABASE myprojectk;**
 
 **CREATE USER myprojectuser WITH PASSWORD 'password';**
 
