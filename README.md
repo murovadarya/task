@@ -23,7 +23,7 @@ ALTER ROLE myprojectuser SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
 
 
-открыть проект, созать вертуальную среду
+открыть проект, создать виртуальную среду
 
 ввести команду  
 pip3 install -r requirements.txt
